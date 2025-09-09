@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shashank Pabitwar — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Top navigation -->
+  <header class="topbar">
+    <nav class="container nav">
+      <a class="brand" href="#home">SP</a>
+      <ul class="links">
+        <!-- Only Contact on the right -->
+        <li><a href="#contact" class="btn small">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / banner -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+      <div class="noise"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="avatar" aria-hidden="true">
+        <span>SP</span>
+      </div>
+      <h1 class="title">Shashank Pabitwar</h1>
+      <p class="subtitle">Computer Science, Data Science @ ASU</p>
+      <p class="tag">I build <b>interactive</b>, <b>frontend-first</b> web experiences.</p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#skills">See my skills</a>
+        <a class="btn ghost" href="mailto:spabitwa@asu.edu">Email me</a>
+        <a class="btn outline" target="_blank" rel="noopener"
+           href="https://www.linkedin.com/in/shashank-sainath-pabitwar-4332aa327">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission (left) + Recent Project (right) -->
+  <section id="mission" class="section">
+    <div class="container grid two-col">
+      <!-- LEFT: Mission -->
+      <article class="card text-card">
+        <h2>Mission</h2>
+        <p>
+          I’m a Computer Science student at <strong>Arizona State University</strong> with a minor in
+          <strong>Data Science</strong>. My mission is to design and build
+          <strong>interactive websites</strong> that feel fast, playful, and accessible. I love working
+          on the <strong>frontend</strong>—turning ideas into polished interfaces and smooth user
+          experiences.
+        </p>
+        <a class="btn soft" href="#contact">Let’s collaborate</a>
+      </article>
+
+      <!-- RIGHT: Recent Project -->
+      <article class="card project-card">
+        <div class="project-head">
+          <h2>Recent Project: DormDash</h2>
+        </div>
+        <p class="muted">
+          DormDash is a student-friendly moving service app: quick item add, live cost estimate,
+          helpers/supplies selection, and a clean booking flow. I focus on <strong>responsive UI</strong>,
+          smooth interactions, and clear visual feedback to keep the process simple and fast.
+        </p>
+        <ul class="project-points">
+          <li>Modern, animated frontend with accessible components</li>
+          <li>Cart/estimate logic and straightforward checkout UX</li>
+          <li>Built for speed: minimal friction from pickup → confirmation</li>
+        </ul>
+        <a class="btn outline" target="_blank" rel="noopener"
+           href="https://shashankpabitwar123.github.io/drom-das-original/">Check it out ↗</a>
+      </article>      
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="center">Skills</h2>
+      <p class="center sub">Tools & languages I enjoy using:</p>
+
+      <div class="skills">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">Responsive UI</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">React</span>
+        <span class="chip">Java</span>
+        <span class="chip">Python</span>
+        <span class="chip">Git & GitHub</span>
+        <span class="chip">Accessibility</span>
+        <span class="chip">Figma (UI)</span>
+      </div>
+      <!-- removed the "Hover chips" hint -->
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <article class="card">
+        <h2>Contact</h2>
+        <p>Open to frontend internships, collaborations, and fun side projects.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:spabitwa@asu.edu">spabitwa@asu.edu</a></li>
+          <li><a target="_blank" rel="noopener"
+                 href="https://www.linkedin.com/in/shashank-sainath-pabitwar-4332aa327">LinkedIn Profile</a></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:spabitwa@asu.edu">Email Me</a>
+          <a class="btn outline" target="_blank" rel="noopener"
+             href="https://www.linkedin.com/in/shashank-sainath-pabitwar-4332aa327">Connect on LinkedIn</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="y"></span> Shashank Pabitwar</p>
+    </div>
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
