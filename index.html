@@ -1,160 +1,171 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shashank Pabitwar — Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Shashank Pabitwar — Portfolio</title>
+<link href="styles.css" rel="stylesheet"/>
+<!-- Font Awesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
-  <!-- Top navigation -->
-  <header class="topbar">
-    <nav class="container nav">
-      <a class="brand" href="#home">SP</a>
-      <ul class="links">
-        <li><a href="#contact" class="btn small">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero / banner -->
-  <section id="home" class="hero">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="blob b1"></div>
-      <div class="blob b2"></div>
-      <div class="blob b3"></div>
-      <div class="noise"></div>
-    </div>
-
-    <div class="container hero-inner">
-      <div class="avatar" aria-hidden="true">
-        <span>SP</span>
-      </div>
-      <h1 class="title">Shashank Pabitwar</h1>
-      <p class="subtitle">Computer Science, Data Science @ ASU</p>
-      <p class="tag">I build <b>interactive</b>, <b>frontend-first</b> web experiences.</p>
-
-      <div class="cta-row">
-        <a class="btn primary" href="#skills">See my skills</a>
-        <a class="btn ghost" href="mailto:spabitwa@asu.edu">Email me</a>
-        <a class="btn outline" target="_blank" rel="noopener"
-           href="https://www.linkedin.com/in/shashank-sainath-pabitwar-4332aa327">LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mission (left) + Recent Project (right) -->
-  <section id="mission" class="section">
-    <div class="container grid two-col">
-      <!-- LEFT: Mission -->
-      <article class="card text-card">
-        <h2>Mission</h2>
-        <p>
+<!-- Top navigation -->
+<header class="topbar">
+<nav class="container nav">
+<a class="brand" href="#home">SP</a>
+<ul class="links"><li><a class="btn small" href="#projects">Projects</a></li>
+<li><a class="btn small" href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<!-- Hero / banner -->
+<section class="hero" id="home">
+<div aria-hidden="true" class="hero-bg">
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+<div class="noise"></div>
+</div>
+<div class="container hero-inner">
+<div aria-hidden="true" class="avatar">
+<span>SP</span>
+</div>
+<h1 class="title">Shashank Pabitwar</h1>
+<p class="subtitle">Computer Science, Data Science @ ASU</p>
+<p class="tag">I build <b>interactive</b>, <b>frontend-first</b> web experiences.</p>
+<div class="cta-row">
+<a class="btn primary" href="#skills">See my skills</a>
+<a class="btn ghost" href="mailto:spabitwa@asu.edu">Email me</a>
+<a class="btn outline" href="https://www.linkedin.com/in/shashank-sainath-pabitwar-4332aa327" rel="noopener" target="_blank">LinkedIn</a>
+</div>
+</div>
+</section>
+<!-- Mission (left) + Recent Project (right) -->
+<section class="section" id="mission">
+<div class="container grid two-col">
+<!-- LEFT: Mission -->
+<article class="card text-card">
+<h2>Mission</h2>
+<p>
           I’m a Computer Science student at <strong>Arizona State University</strong> with a minor in
           <strong>Data Science</strong>. My mission is to design and build
           <strong>interactive websites</strong> that feel fast, playful, and accessible. I love working
           on the <strong>frontend</strong>—turning ideas into polished interfaces and smooth user
           experiences.
         </p>
-        <a class="btn soft" href="#contact">Let’s collaborate</a>
-      </article>
+<a class="btn soft" href="#contact">Let’s collaborate</a>
+</article>
+<!-- RIGHT: Recent Project -->
 
-      <!-- RIGHT: Recent Project -->
-      <article class="card project-card">
-        <div class="project-head">
-          <h2>Recent Project: DormDash</h2>
-        </div>
-        <p class="muted">
+</div>
+</section>
+<section class="section" id="projects">
+<div class="container">
+<h2>Projects</h2>
+<article class="card project-card">
+<div class="project-head">
+<h2>DormDash</h2>
+</div>
+<p class="muted">
           DormDash is a student-friendly moving service app: quick item add, live cost estimate,
           helpers/supplies selection, and a clean booking flow. I focus on <strong>responsive UI</strong>,
           smooth interactions, and clear visual feedback to keep the process simple and fast.
         </p>
-        <ul class="project-points">
-          <li>Modern, animated frontend with accessible components</li>
-          <li>Cart/estimate logic and straightforward checkout UX</li>
-          <li>Built for speed: minimal friction from pickup → confirmation</li>
-        </ul>
-        <a class="btn outline" target="_blank" rel="noopener"
-           href="https://shashankpabitwar123.github.io/drom-das-original/">Check it out ↗</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- Skills with icons -->
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2 class="center">Skills</h2>
-      <p class="center sub">Skills i m good at:</p>
-
-      <div class="skills icons">
-        <div class="skill-item">
-          <i class="fa-brands fa-html5"></i>
-          <p>HTML</p>
-        </div>
-        <div class="skill-item">
-          <i class="fa-brands fa-css3-alt"></i>
-          <p>CSS</p>
-        </div>
-        <div class="skill-item">
-          <i class="fa-brands fa-js"></i>
-          <p>JavaScript</p>
-        </div>
-        <div class="skill-item">
-          <i class="fa-brands fa-bootstrap"></i>
-          <p>Bootstrap</p>
-        </div>
-        <div class="skill-item">
-          <i class="fa-brands fa-react"></i>
-          <p>React</p>
-        </div>
-        <div class="skill-item">
-          <i class="fa-brands fa-python"></i>
-          <p>Python</p>
-        </div>
-        <div class="skill-item">
-          <i class="fa-brands fa-java"></i>
-          <p>Java</p>
-        </div>
-        <div class="skill-item">
-          <i class="fa-brands fa-github"></i>
-          <p>Git & GitHub</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <article class="card">
-        <h2>Contact</h2>
-        <p>Open to frontend internships, collaborations, and fun side projects.</p>
-        <ul class="contact-list">
-          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:spabitwa@asu.edu">spabitwa@asu.edu</a></li>
-          <li><i class="fa-brands fa-linkedin"></i>
-            <a target="_blank" rel="noopener"
-               href="https://www.linkedin.com/in/shashank-sainath-pabitwar-4332aa327">LinkedIn Profile</a>
-          </li>
-        </ul>
-        <div class="cta-row">
-          <a class="btn primary" href="mailto:spabitwa@asu.edu">Email Me</a>
-          <a class="btn outline" target="_blank" rel="noopener"
-             href="https://www.linkedin.com/in/shashank-sainath-pabitwar-4332aa327">Connect on LinkedIn</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="y"></span> Shashank Pabitwar.</p>
-    </div>
-    <script>
+<ul class="project-points">
+<li>Modern, animated frontend with accessible components</li>
+<li>Cart/estimate logic and straightforward checkout UX</li>
+<li>Built for speed: minimal friction from pickup → confirmation</li>
+</ul>
+<a class="btn outline" href="https://shashankpabitwar123.github.io/drom-das-original/" rel="noopener" target="_blank">Check it out ↗</a>
+</article><article class="card project-card">
+<div class="project-head">
+<h2>Arrow Survival</h2>
+</div>
+<p class="muted">
+        A fast, browser-based survival mini‑game. Dodge incoming arrows from roaming archers,
+        collect diamonds, and chase a high score. Built with <strong>HTML5 Canvas</strong> and
+        vanilla <strong>JavaScript</strong>; works on desktop and mobile.
+      </p>
+<ul class="project-points">
+<li>Difficulty options and sound toggle</li>
+<li>Responsive controls: keyboard &amp; touch</li>
+<li>Runs 100% in the browser</li>
+</ul>
+<a class="btn outline" href="https://shashankpabitwar123.github.io/ARROW-SURVIVAL/" rel="noopener" target="_blank">
+        Try it out ↗
+      </a>
+</article>
+</div>
+</section>
+<!-- Skills with icons -->
+<section class="section alt" id="skills">
+<div class="container">
+<h2 class="center">Skills</h2>
+<p class="center sub">Skills i m good at:</p>
+<div class="skills icons">
+<div class="skill-item">
+<i class="fa-brands fa-html5"></i>
+<p>HTML</p>
+</div>
+<div class="skill-item">
+<i class="fa-brands fa-css3-alt"></i>
+<p>CSS</p>
+</div>
+<div class="skill-item">
+<i class="fa-brands fa-js"></i>
+<p>JavaScript</p>
+</div>
+<div class="skill-item">
+<i class="fa-brands fa-bootstrap"></i>
+<p>Bootstrap</p>
+</div>
+<div class="skill-item">
+<i class="fa-brands fa-react"></i>
+<p>React</p>
+</div>
+<div class="skill-item">
+<i class="fa-brands fa-python"></i>
+<p>Python</p>
+</div>
+<div class="skill-item">
+<i class="fa-brands fa-java"></i>
+<p>Java</p>
+</div>
+<div class="skill-item">
+<i class="fa-brands fa-github"></i>
+<p>Git &amp; GitHub</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact -->
+<section class="section" id="contact">
+<div class="container">
+<article class="card">
+<h2>Contact</h2>
+<p>Open to frontend internships, collaborations, and fun side projects.</p>
+<ul class="contact-list">
+<li><i class="fa-solid fa-envelope"></i> <a href="mailto:spabitwa@asu.edu">spabitwa@asu.edu</a></li>
+<li><i class="fa-brands fa-linkedin"></i>
+<a href="https://www.linkedin.com/in/shashank-sainath-pabitwar-4332aa327" rel="noopener" target="_blank">LinkedIn Profile</a>
+</li>
+</ul>
+<div class="cta-row">
+<a class="btn primary" href="mailto:spabitwa@asu.edu">Email Me</a>
+<a class="btn outline" href="https://www.linkedin.com/in/shashank-sainath-pabitwar-4332aa327" rel="noopener" target="_blank">Connect on LinkedIn</a>
+</div>
+</article>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<p>© <span id="y"></span> Shashank Pabitwar.</p>
+</div>
+<script>
       document.getElementById('y').textContent = new Date().getFullYear();
     </script>
-  </footer>
+</footer>
 </body>
 </html>
 
